@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="AppFinanc.Componentes.Container"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <VerticalStackLayout>
+        <Frame
+            Margin="5,10,5,0"
+            BackgroundColor="#18191F"
+            BorderColor="#50147C76">
+
+            <StackLayout>
+                <Label
+                    x:Name="exercicio"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="Mês de "
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <BoxView
+                    BackgroundColor="Gray"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="Débito: "
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <BoxView
+                    BackgroundColor="Gray"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontSize="18"
+                    HorizontalOptions="Start"
+                    Text="Crédito"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+
+            </StackLayout>
+
+
+        </Frame>
+    </VerticalStackLayout>
+</ContentView>

@@ -7,7 +7,9 @@
     xmlns:page="clr-namespace:AppFinanc.MVVM.Views"
     Title="TabView"
     android:TabbedPage.ToolbarPlacement="Bottom"
-    BackgroundColor="#0C1318">
+    BarBackground="#0C1318"
+    UnselectedTabColor="#003358"
+    SelectedTabColor="#075994">
     <page:ViewDebito />
     <page:ViewGeral />
     <page:ViewCredito />
