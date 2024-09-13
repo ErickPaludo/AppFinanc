@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using AppFinanc.MVVM.Model.SQLite;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
@@ -14,16 +15,21 @@ namespace AppFinanc.MVVM.ModelViews.ComponentesVM
     {
         [ObservableProperty]
         private bool _isRedButtonEnabled;
-     
+
+        private SqliteService sql;
 
         [RelayCommand]
         private void ValueRegisterViewModel()
         {
-            // Inicialmente o botão vermelho está invisível
             IsRedButtonEnabled = !IsRedButtonEnabled;
+            sql.InitilizeAsync();
         }
 
-     
-      
+        public ValueRegisterVM()
+        {
+            sql = SqliteService.GetInstance();
+        }
+
+
     }
 }

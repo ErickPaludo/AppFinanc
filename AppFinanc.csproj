@@ -57,19 +57,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
-		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.9" />
-		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.9" />
-		<PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.9" />
-		<PackageReference Include="SQLitePCLRaw.provider.e_sqlite3" Version="2.1.9" />
+	  <AndroidResource Remove="MVVM\Models\**" />
+	  <Compile Remove="MVVM\Models\**" />
+	  <EmbeddedResource Remove="MVVM\Models\**" />
+	  <MauiCss Remove="MVVM\Models\**" />
+	  <MauiXaml Remove="MVVM\Models\**" />
+	  <None Remove="MVVM\Models\**" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="MVVM\Models\" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.82" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.82" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.10" />
+		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.10" />
+		<PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.10" />
+		<PackageReference Include="SQLitePCLRaw.provider.e_sqlite3" Version="2.1.10" />
 	</ItemGroup>
 
 	<ItemGroup>
