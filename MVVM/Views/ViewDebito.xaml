@@ -4,10 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:container="clr-namespace:AppFinanc.Componentes"
+    xmlns:vm="clr-namespace:AppFinanc.MVVM.ModelViews"
     Title="Debito"
     BackgroundColor="#0D1E2B">
-    <VerticalStackLayout>
 
+    <ContentPage.BindingContext>
+        <vm:DebidoVM />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout>
         <Border
             Margin="0,-5,0,0"
             BackgroundColor="#0C1318"
@@ -36,6 +41,6 @@
                     VerticalOptions="Center" />
             </StackLayout>
         </Border>
-        <container:ValueRegister/>
+        <container:ValueRegister />
     </VerticalStackLayout>
 </ContentPage>
